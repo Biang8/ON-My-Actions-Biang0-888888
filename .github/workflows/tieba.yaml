@@ -3,7 +3,7 @@ name: 百度签到
 on:
     workflow_dispatch:
     schedule:
-        - cron: "30 04 * * *"
+        - cron: "0 16 * * *"
     watch:
         types: [started]
 
@@ -42,4 +42,4 @@ jobs:
                   BARK_SOUND: ${{ secrets.BARK_SOUND }}
                   DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
                   DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-#最后推送 2021年9月20日
+# 最后推送时间需根据实际情况更新      
